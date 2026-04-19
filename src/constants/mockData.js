@@ -1,0 +1,41 @@
+export const suspiciousTerms = [
+  'login',
+  'verify',
+  'secure',
+  'account',
+  'update',
+  'banking',
+  'wallet',
+  'bonus',
+  'urgent',
+  'free',
+  'signin',
+  'confirm',
+];
+
+export const initialHistory = [
+  {
+    id: 1,
+    url: 'https://www.github.com',
+    status: 'safe',
+    riskScore: 12,
+    urlLength: 22,
+    suspiciousKeywords: [],
+    domainAge: '15+ years',
+    sslStatus: 'Valid SSL',
+    timestamp: 'Today · 09:42 AM',
+    summary: 'Trusted domain structure with HTTPS and no suspicious keyword patterns detected.',
+  },
+  {
+    id: 2,
+    url: 'http://secure-banking-update-alert.net/login',
+    status: 'phishing',
+    riskScore: 89,
+    urlLength: 46,
+    suspiciousKeywords: ['secure', 'banking', 'update', 'login'],
+    domainAge: 'Recently registered',
+    sslStatus: 'Missing SSL',
+    timestamp: 'Today · 08:15 AM',
+    summary: 'Multiple phishing indicators found, including high-risk keywords and insecure protocol usage.',
+  },
+];
