@@ -1,0 +1,18 @@
+{
+  "name": "phishing-url-detector",
+  "version": "1.0.0",
+  "description": "Full-stack Phishing URL Detection Web App",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "server": "npm run start -w server",
+    "client": "npm run dev -w placeholder-model-2",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
